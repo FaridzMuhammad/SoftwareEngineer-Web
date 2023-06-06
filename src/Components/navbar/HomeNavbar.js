@@ -25,7 +25,7 @@ const HomeNavbar = () => {
       
       <div className="navbar bg-secondary" style={{ height: "90px" }}>
         <img src={logo} style={{ width: "200px" }}></img>
-        <img src={judul} style={{ width: "120px" }}></img>
+        <img src={judul} style={{ width: "180px" }}></img>
         <div
           className="flex-1"
           style={{ display: "flex", justifyContent: "center" }}
