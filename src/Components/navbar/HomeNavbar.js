@@ -1,4 +1,6 @@
 import React from "react";
+
+// image
 import img from "../../Components/Img/farid.jpg";
 import logo from "../../Components/Img/mask1.png";
 import judul from "../../Components/Img/PARTYPOP.png";
@@ -7,14 +9,27 @@ import ABOUTUS from "../../Components/Img/ABOUT US.png";
 import SERVICES from "../../Components/Img/SERVICES.png";
 import CONTACT from "../../Components/Img/CONTACT.png";
 import BOOKING from "../../Components/Img/BOOKING.png";
+import Balon2 from "../../Components/Img/balon2 1.png";
+import Balon3 from "../../Components/Img/balon3 1.png";
+import Kruwel from "../../Components/Img/kruwel1 1.png";
+import LOGOUT from "../../Components/Img/LOGOUT.png";
 
 const HomeNavbar = () => {
   return (
     <div>
-      <div className="navbar bg-secondary">
-        <img src={logo} style={{ width: "90px" }}></img>
+      <div className="navbar bg-base-100" style={{ display: "flex", justifyContent: "right" }}>
+        <button className="btn" style={{backgroundColor:'orange'}}>
+            <img src={LOGOUT} style={{ width: "50px" }}></img>
+        </button>
+      </div>
+      
+      <div className="navbar bg-secondary" style={{ height: "90px" }}>
+        <img src={logo} style={{ width: "200px" }}></img>
         <img src={judul} style={{ width: "120px" }}></img>
-        <div className="flex-1" style={{display:'flex', justifyContent:'center'}}>
+        <div
+          className="flex-1"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
@@ -34,6 +49,9 @@ const HomeNavbar = () => {
               </li>
             </ul>
           </div>
+          <img src={Balon3} style={{ width: "90px" }}></img>
+          <img src={Balon2} style={{ width: "90px" }}></img>
+          <img src={Kruwel} style={{ width: "50px" }}></img>
         </div>
 
         <div className="flex-none">
