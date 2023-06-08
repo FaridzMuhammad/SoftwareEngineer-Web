@@ -1,6 +1,7 @@
 import React from 'react';
-import HomeNavbar from '../../Components/Navbar/HomeNavbar';
+import HomeNavbar from '../../Components/navbar/HomeNavbar';
 import { Button } from 'antd';
+// img
 import HomeDashboard1 from '../../Components/Img/HomeDahboard1.png';
 import HomeDashboard2 from '../../Components/Img/HomeDashboard2.png';
 import HomeDashboard3 from '../../Components/Img/HomeDashboard3.png';

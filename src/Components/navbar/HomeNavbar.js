@@ -13,17 +13,20 @@ import Balon2 from "../../Components/Img/balon2 1.png";
 import Balon3 from "../../Components/Img/balon3 1.png";
 import Kruwel from "../../Components/Img/kruwel1 1.png";
 import LOGOUT from "../../Components/Img/LOGOUT.png";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const HomeNavbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100" style={{ display: "flex", justifyContent: "right" }}>
-        <button className="btn" style={{backgroundColor:'orange'}}>
-            <img src={LOGOUT} style={{ width: "50px" }}></img>
+      <div
+        className="navbar bg-base-100"
+        style={{ display: "flex", justifyContent: "right" }}
+      >
+        <button className="btn" style={{ backgroundColor: "orange" }}>
+          <img src={LOGOUT} style={{ width: "50px" }}></img>
         </button>
       </div>
-      
+
       <div className="navbar bg-secondary" style={{ height: "90px" }}>
         <img src={logo} style={{ width: "200px" }}></img>
         <img src={judul} style={{ width: "180px" }}></img>
@@ -34,10 +37,14 @@ const HomeNavbar = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <img src={HOME} style={{ width: "75px" }}></img>
+                <a href="/home">
+                <img src={HOME} style={{ width: "50px" }}></img>
+                </a>
               </li>
               <li>
-                <img src={ABOUTUS} style={{ width: "90px" }}></img>
+                <a href="/About_us">
+                  <img src={ABOUTUS} style={{ width: "70px" }}></img>
+                </a>
               </li>
               <li>
                 <img src={SERVICES} style={{ width: "90px" }}></img>
