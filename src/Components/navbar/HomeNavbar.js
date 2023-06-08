@@ -13,6 +13,7 @@ import Balon2 from "../../Components/Img/balon2 1.png";
 import Balon3 from "../../Components/Img/balon3 1.png";
 import Kruwel from "../../Components/Img/kruwel1 1.png";
 import LOGOUT from "../../Components/Img/LOGOUT.png";
+import { Outlet } from "react-router-dom";
 
 const HomeNavbar = () => {
   return (
@@ -81,6 +82,7 @@ const HomeNavbar = () => {
           </div>
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };

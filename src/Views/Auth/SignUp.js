@@ -31,7 +31,12 @@ const SignUp = () => {
                                 className="input input-bordered"
                                 style={{ flex: '1' }}
                                 inputReadOnly={true}
-                                pickerInputStyle={{ color: '#fff', '::placeholder': { color: 'rgb(156, 163, 175)' } }}
+                                pickerInputStyle={{
+                                    color: '#fff',
+                                    '::placeholder': {
+                                        color: 'rgb(156, 163, 175)',
+                                    },
+                                }}
                             />
                         </div>
                     </div>
